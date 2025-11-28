@@ -1,0 +1,157 @@
+/*
+  === Váriaveis CSS para Cores ===
+  Define as cores principais para fácil manutenção e consistência
+*/
+:root {
+    --color-primary-dark: #1e3a8a; /* Azul escuro do botão e texto principal */
+    --color-text-dark: #0f172a;    /* Cor para títulos */
+    --color-text-light: #475569;   /* Cor para descrições/mensagens */
+    --color-background-light: #f7f3ed; /* Cor de fundo da ilustração (tom pêssego/bege) */
+    --color-white: #ffffff;        /* Branco puro */
+}
+
+/* === Reset e Tipografia Global === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-white); /* Fundo da página */
+    padding: 20px;
+    text-align: center;
+}
+
+/* === Container Principal === */
+.welcome-container {
+    max-width: 400px; /* Limita a largura máxima para dispositivos móveis */
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Animação de entrada suave */
+    animation: fadeIn 1s ease-out;
+}
+
+/* === Logo (Simulação) === */
+.logo-box {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-background-light); /* Fundo suave do logo */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Animação sutil de escala */
+    transition: transform 0.3s ease;
+}
+
+.logo-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-light);
+}
+
+/* === Ilustração === */
+.illustration-box {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0 40px 0;
+    background-color: var(--color-background-light); /* Cor de fundo da área da ilustração */
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 30px; /* Preenchimento para simular o espaço interno */
+}
+
+.illustration-box img {
+    /* Esta imagem é apenas um PLACEHOLDER, use a sua ilustração real! */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* === Título e Mensagem === */
+.welcome-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 15px;
+}
+
+.welcome-message {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+/* === Botão de Ação (Começar) === */
+.start-button {
+    width: 100%;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 15px; /* Borda arredondada moderna */
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 8px 15px rgba(30, 58, 138, 0.2); /* Sombra suave */
+}
+
+.start-button:hover {
+    background-color: #1c3378; /* Tom um pouco mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+.start-button:active {
+    transform: translateY(0); /* Efeito de clique */
+    box-shadow: 0 4px 10px rgba(30, 58, 138, 0.3);
+}
+
+/* === Animações CSS === */
+
+/* Animação para carregar a página */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animação de Pulsar no Botão (sutil) */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(30, 58, 138, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(30, 58, 138, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(30, 58, 138, 0); }
+}
+
+.start-button {
+    animation: fadeIn 1.2s ease-out, pulse 2s infinite 1s; /* Inicia o pulse 1s após o fade-in */
+}
+
+/* === Media Queries para Responsividade === */
+/* Adaptação para telas menores (como smartphones muito pequenos) */
+@media (max-width: 360px) {
+    .welcome-title {
+        font-size: 26px;
+    }
+
+    .welcome-message {
+        font-size: 14px;
+    }
+
+    .start-button {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+}
