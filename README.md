@@ -1,4 +1,4 @@
-#  KULUMA - escolha uma Voz e cria suas Palavras.
+#  KULUMA - escolha uma Voz e cria suas Palavras. (Em desenvolvimento)
 
 ##  Visão Geral
 
