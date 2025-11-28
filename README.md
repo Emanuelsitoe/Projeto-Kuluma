@@ -2,7 +2,7 @@
 
 ##  Visão Geral
 
-O **KULUMA** (que significa "falar" em algumas línguas africanas) é um aplicativo web e móvel dedicado a quebrar as barreiras de comunicação enfrentadas por pessoas que não podem usar a voz. Utilizando tecnologia de ponta, o KULUMA transforma a Língua Gestual e outras entradas não verbais em texto e áudio instantâneos, garantindo que "Sua voz, suas palavras" sejam ouvidas de forma fácil, eficaz e natural.
+O **KULUMA** (que significa "falar" na lingua Changana de (Moçambuique) é um aplicativo web e móvel dedicado a quebrar as barreiras de comunicação enfrentadas por pessoas que não podem usar a voz. Utilizando tecnologia de ponta, o KULUMA transforma a Língua Gestual e outras entradas não verbais em texto e áudio instantâneos, garantindo que "Sua voz, suas palavras" sejam ouvidas de forma fácil, eficaz e natural.
 
 Este projeto visa promover a inclusão social e digital, oferecendo uma ferramenta poderosa para interação diária, profissional e emergencial.
 
